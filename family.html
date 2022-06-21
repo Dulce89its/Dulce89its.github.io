@@ -1,0 +1,96 @@
+<!--CS601 Assignment 1, Ian Sweet-->
+<!--DOCTYPE declaration, using HTML5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="text.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="personal website">
+    <meta name="keywords" content="family,nephew,niece">
+    <meta name="author" content="Ian Sweet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    
+</head>
+<body>
+    <div class="contents">
+        <nav class="uppernav">
+            <a href="index.html">Home</a>
+            <a href="pets.html">Pets</a>
+            <a href="orchids.html">Plants</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="honeymoon.html">Honeymoon</a>
+            <a class= "active" href= "family.html">Family</a>
+            <a href="school.html">School</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    <header>
+        <h1>Family</h1>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="javascript/family.js" type="module">
+        </script>
+    </header>
+    <section>
+        <article>
+            <div id="app">
+                <hr>
+                <img :src="nephewImage" @mouseover="updateNephew(1)" @mouseleave="updateNephew(0)" alt="Erik"/>
+                <h3>
+                    Pictured above is my nephew Erik, as a baby and today.
+                </h3>
+                <img :src="nieceImage" @mouseover="updateNiece(3)" @mouseleave="updateNiece(2)" alt="Nora"/>
+                <h3>
+                    Pictured above is my niece Nora, as a baby and today.
+                </h3>
+            </div>
+            <p>
+                My nephew Erik was born in 2011 and is almost 11 years old.  He has been a huge enrichment to my life, and I see him
+                at least once a month.<br/><br/>
+                My niece Nora is almost seven and I see her at least once a month also.<br/><br/>
+                Being an uncle is great!
+            </p>
+    </article>
+    </section>
+    <figure>
+        <img src="images/mom_dad.jpg" alt="parents" />
+        <figcaption>
+            These are my parents, Polly and Carl Sweet. 
+        </figcaption>
+    </figure>
+    <br />
+    <p>
+        Both of my parents are retired and enjoy spending time with their grandchildren and travelling, most recently
+        to Paris, France!
+    </p>
+    <h3>Interesting things about my parents:</h3>
+            <ul>
+                <li>They have travelled to over 40 countries and nearly every U.S. State!</li>
+                <li>They both love to garden</li>
+                <li>They see their grandchildren at least once a week</li>
+            </ul>
+    <figure>
+        <img src="images/mywife.jpg" alt="my wife"/>
+      
+        <figcaption>
+            Pictured above is my wife, and the love of my life, Jenn Clark.
+        </figcaption>
+    </figure>
+    <br />
+    <p>
+        Jenn is an exceptionally talented person.<br/><br/>She is a fantastic piano player and often performs with and acts 
+        as the music director for our local community theater.<br/><br/>Jenn and I have been married since September 5th, 2020.
+    </p>
+    <h3>Interesting things about Jenn:</h3>
+            <ul>
+                <li>She loves to read</li>
+                <li>She is incredibly kind and caring</li>
+                <li>She loves dogs!</li>
+                <li>She is a fantastic cook</li>
+                <li>Jenn and I met in middle school</li>
+            </ul>
+    <footer>
+        <h6>Copyright @2022 Ian Sweet. All Rights Reserved.</h6>
+    </footer>
+</div>
+</body>
+</html>
