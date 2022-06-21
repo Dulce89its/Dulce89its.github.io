@@ -1,0 +1,13 @@
+[
+    {
+    "School":"Wright State University",
+    "Major": "International Business",
+    "Type":"BS",
+    "Yearconferred":2012
+},
+{"School":"Boston University",
+    "Major": "Software Development",
+    "Type":"MS",
+    "Yearconferred":2023
+}
+]
