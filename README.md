@@ -1,0 +1,1 @@
+This is a personal website detailing information about my life, my interests and hobbies, my family, and my education. It is intended to demonstrate an understanding of the fundamental concepts of web design as laid out in my course CS601, including but not limited to HTML5, CSS 3, Javascript, Vue, Web page layout and design, DOM and website usability.
